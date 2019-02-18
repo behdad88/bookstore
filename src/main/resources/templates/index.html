@@ -16,8 +16,9 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Behdad 's Store</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,30 +26,36 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample09" navbar navbar-expand-lg navbar-light bg-light rounded>
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Shopping Cart <span class="sr-only">Shopping Cart</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">My Account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link disabled" href="#">Logout</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        </ul>
+        <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Books</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown09">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Browse the bookshelf</a>
+                    <a class="dropdown-item" href="#">Store hours &#38; Directions</a>
+                    <a class="dropdown-item" href="#">FAQ</a>
                 </div>
             </li>
         </ul>
+
+
         <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-2" name="keyword" type="text" placeholder="Search" aria-label="Search">
+            <button type="submit" class="btn btn-primary">Search</button>
         </form>
     </div>
 </nav>
+
 <div class="container">
     <div class="row">
 
@@ -154,53 +161,82 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image1" /></div>
-                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image2" /></div>
-                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image3" /></div>
-                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image4" /></div>
-                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image5" /></div>
-                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image6" /></div>
+                                <img src="/image/shelf.png" alt="bg image" class="img-fluid"/>
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image1"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image2"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image3"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image4"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image5"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image6"/></div>
+                                    </div>
                                 </div>
                             </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image1" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image2" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image3" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image4" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image5" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image6" /></div>
+                            <div class="carousel-item">
+                                <img src="/image/shelf.png" alt="bg image" class="img-fluid"/>
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image1"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image2"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image3"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image4"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image5"/></div>
+                                        <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                                   alt="image6"/></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image1" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image2" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image3" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image4" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image5" /></div>
-                                <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail" alt="image6" /></div>
+                            <img src="/image/shelf.png" alt="bg image" class="img-fluid"/>
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                               alt="image1"/></div>
+                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                               alt="image2"/></div>
+                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                               alt="image3"/></div>
+                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                               alt="image4"/></div>
+                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                               alt="image5"/></div>
+                                    <div class="col-md-2"><img src="image/book1.png" class="img-fluid img-thumbnail"
+                                                               alt="image6"/></div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#featured-books" role="button"
-                       data-slide="prev">
-                        <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#featured-books" role="button"
-                       data-slide="next">
-                        <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
-
+            <a class="carousel-control-prev" href="#featured-books" role="button"
+               data-slide="prev">
+                <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#featured-books" role="button"
+               data-slide="next">
+                <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!--carousel ends-->
     </div>
+
+</div>
+<!--carousel ends-->
+</div>
 
 </div><!--end of container-->
 
