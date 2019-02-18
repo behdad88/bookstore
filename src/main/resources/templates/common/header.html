@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="common-header">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="It is a simple bookstore using spring"/>
+    <meta name="author" content="Behdad Karimi"/>
+
+    <title>Behdad 's Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div th:fragment="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <a class="navbar-brand" href="#">Behdad 's Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample09" navbar navbar-expand-lg navbar-light bg-light
+             rounded>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shopping Cart <span class="sr-only">Shopping Cart</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Logout</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mr-2">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Books</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                        <a class="dropdown-item" href="#">Browse the bookshelf</a>
+                        <a class="dropdown-item" href="#">Store hours &#38; Directions</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                </li>
+            </ul>
+
+
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control mr-2" name="keyword" type="text" placeholder="Search" aria-label="Search">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+<div th:fragment="body_bottom_scripts">
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
